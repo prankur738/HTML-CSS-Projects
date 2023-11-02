@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Survey Form</h1>
+        <p id="description" class="description text-center">
+        Fill your details below
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name" class="sub-heading">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email" class="sub-heading">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number" class="sub-heading"
+            >Age</label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p class="sub-heading">Which option best describes your current role?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option>Student</option>
+            <option>Full Time Job</option>
+            <option>Learner</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p class="sub-heading">From where, you get to know about us</p>
+          <label>
+            <input
+              type="radio"
+              class="input-radio"
+              checked
+            />Facebook</label
+          >
+          <label>
+            <input
+              type="radio"
+              class="input-radio"
+            />Google</label
+          >
+
+          <label
+            ><input
+              type="radio"
+              class="input-radio"
+            />YouTube</label
+          >
+        </div>
+
+
+        <div class="form-group">
+          <p class="sub-heading">
+            What are your technical skills?
+          </p>
+
+          <label
+            ><input
+              type="checkbox"
+              class="input-checkbox"
+            />Java</label
+          >
+          <label>
+            <input
+              type="checkbox"
+              class="input-checkbox"
+            />Python</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="input-checkbox"
+            />JavaScript</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="input-checkbox"
+            />HTML</label
+          >
+          <label
+            ><input
+            type="checkbox"
+              class="input-checkbox"
+            />CSS</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="input-checkbox"
+            />SQL</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="input-checkbox"
+            />Videos</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="input-checkbox"
+            />React</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="input-checkbox"
+            />SpringBoot</label
+          >
+        <div class="form-group">
+          <p class="sub-heading">Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
